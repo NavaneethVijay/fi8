@@ -234,6 +234,26 @@ AOS.init({
   }
   contentWayPoint()
 
+  var onContactClick = function() {
+    $(document).on('click', '.cta-contact', function(event) {
+      event.preventDefault()
+
+      var href = $.attr(this, 'href')
+
+      $('html, body').animate(
+        {
+          scrollTop: $($.attr(this, 'href')).offset().top - 70
+        },
+        500,
+        function() {
+          // window.location.hash = href;
+        }
+      )
+    })
+  }
+
+  onContactClick()
+
   // magnific popup
   $('.image-popup').magnificPopup({
     type: 'image',

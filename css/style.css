@@ -10453,8 +10453,7 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light .navbar-brand {
   color: #000000;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
+  padding: 0;
 }
 
 .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
@@ -10675,8 +10674,8 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light.scrolled .navbar-brand {
   color: #000000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
   font-size: 24px;
 }
 
@@ -10692,6 +10691,21 @@ h1, h2, h3, h4, h5,
 
 .navbar-brand span {
   font-weight: 900;
+}
+
+.navbar-brand .logo-img {
+  width: 45px;
+  height: auto;
+}
+
+.navbar-brand .logo-title {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    height: 300px;
+  }
 }
 
 .hero h3.vr {
@@ -11399,6 +11413,18 @@ h1, h2, h3, h4, h5,
 .ftco-services-2 .services {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border: 1px solid #7ac4cf;
+}
+
+@media (max-width: 768px) {
+  .ftco-services-2 .services {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    min-width: 60%;
+    border-radius: 2px;
+  }
 }
 
 .ftco-services-2 .services .icon {
@@ -11566,12 +11592,18 @@ h1, h2, h3, h4, h5,
   box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
 }
 
-.coach-wrap.features-list h2 {
+.coach-wrap.features-list h3 {
   color: #000000;
+  font-size: 24px;
 }
 
 .coach-wrap.features-list .list-main li {
   color: #000000;
+}
+
+.coach-wrap ul {
+  list-style: none;
+  padding: 0;
 }
 
 .ftco-program .nav-link-wrap {
@@ -12433,6 +12465,12 @@ textarea.form-control {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .contact-section .contact-info > div {
+    margin: 20px 0;
+  }
+}
+
 .contact-section .contact-info p a {
   color: #000000;
 }
@@ -12786,6 +12824,12 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-text {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
