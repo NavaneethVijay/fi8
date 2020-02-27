@@ -942,13 +942,13 @@ h1, h2, h3, h4, h5,
 .ftco-services-2{
 	.services{
 		@include transition(.3s);
-		border: 1px solid #7ac4cf;
 		@media(max-width: 768px){
 			box-sizing: border-box;
 			padding: 10px;
 			margin: 10px;
 			min-width: 60%;
 			border-radius: 2px;
+			border: 1px solid #7ac4cf;
 		}
 		.icon{
 			line-height: 1.3;

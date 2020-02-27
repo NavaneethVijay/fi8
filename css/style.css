@@ -11413,7 +11413,6 @@ h1, h2, h3, h4, h5,
 .ftco-services-2 .services {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border: 1px solid #7ac4cf;
 }
 
 @media (max-width: 768px) {
@@ -11424,6 +11423,7 @@ h1, h2, h3, h4, h5,
     margin: 10px;
     min-width: 60%;
     border-radius: 2px;
+    border: 1px solid #7ac4cf;
   }
 }
 
